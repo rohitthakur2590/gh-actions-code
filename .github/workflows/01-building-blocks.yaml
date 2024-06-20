@@ -1,0 +1,20 @@
+name: 01 - Building Blocks
+
+on: push # trigger for the workflow
+
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Say Hello
+              run: echo "Hello World!"
+
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Failed step
+              run: |
+                echo "I will fail"
+                exit 1
+            - name: Say Good Bye
+              run: echo "Good Bye"
