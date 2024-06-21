@@ -14,7 +14,7 @@ jobs:
               uses: actions/setup-node@v3
               with:
                 node-version: "20.x"
-            - name: 
+            - name: Install Dependencies 
               # cd: 04-using-actions/react-app This also works
               run: npm ci
               working-directory: 04-using-actions/react-app
