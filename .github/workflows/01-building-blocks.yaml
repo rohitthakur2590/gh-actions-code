@@ -1,6 +1,8 @@
 name: 01 - Building Blocks
 
-on: push # trigger for the workflow
+on:
+  # push: # trigger for the workflow
+  workflow_dispatch:
 
 jobs:
     echo-hello:
