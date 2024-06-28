@@ -2,7 +2,7 @@ name: 06 - Contexts
 # run-name: My custom workflow run name   - ${{ runnner.os }} # runner context should not be available here.
 run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
 on: 
-  push:
+  # push:
   workflow_dispatch:
     inputs:
       debug:
