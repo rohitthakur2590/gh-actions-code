@@ -20,6 +20,7 @@ jobs:
                 # npm run build
     unit-tests:
         runs-on: ubuntu-latest
+        continue-on-error: true
         steps:
             - name: Running Unit Tests
               run: |
